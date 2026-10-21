@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Lumiere Jewelry | Sign Up</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<main class="wrap">
+
+  <!-- STEP 1: Welcome -->
+  <section class="step active" id="step-welcome">
+    <div class="art"><img src="assets/necklace-welcome.jpg" alt="Jewelry" /></div>
+    <div class="panel">
+      <h1>welcome</h1>
+      <p class="sub">We&rsquo;re glad you&rsquo;re here! Sign up to start</p>
+      <button class="btn-primary" id="getStartedBtn">Get Started</button>
+    </div>
+  </section>
+
+  <!-- STEP 2: Create Account -->
+  <section class="step" id="step-signup">
+    <div class="art"><img src="assets/necklace-signup.jpg" alt="Jewelry" /></div>
+    <div class="panel">
+      <h1>Create Account</h1>
+      <p class="sub">Go ahead and sign up, let everyone<br />know how awesome you are!</p>
+
+      <p class="banner" id="formBanner">Enter Data</p>
+
+      <form id="signupForm" novalidate>
+        <input type="text" id="username" placeholder="User Name" required />
+        <input type="email" id="email" placeholder="Email" required />
+        <input type="password" id="password" placeholder="Password" required minlength="6" />
+        <input type="password" id="confirmPassword" placeholder="Confirm Password" required minlength="6" />
+        <button type="submit" class="btn-primary">Create New Account</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- STEP 3: Success -->
+  <section class="step" id="step-success">
+    <div class="art"><img src="assets/necklace-success.jpg" alt="Jewelry" /></div>
+    <div class="panel">
+      <h1>Successfully logged in</h1>
+      <p class="sub" id="successEmail">User@gmail.com</p>
+      <button class="btn-secondary" id="restartBtn">Start over</button>
+    </div>
+  </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
